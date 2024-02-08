@@ -6,8 +6,8 @@
    Copyright 2024 elenia
    This file is part of eELib, which is free software under the terms of the GNU GPL Version 3.
 
-Welcome to eELib's documentation!
-=================================
+Welcome to my test_page!
+========================
 
 The **eELib** (**e**\lenia **E**\nergy **L**\ibrary) is the software tool for simulations concerning
 **future power systems for prosumers**. The library with its functionalities and models can be used
