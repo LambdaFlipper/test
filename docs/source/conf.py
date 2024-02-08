@@ -27,13 +27,25 @@ author = "elenia"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.autodoc",
+    "autoapi.extension",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.coverage",
     "sphinx.ext.napoleon",
 ]
 napoleon_numpy_docstring = False
 # pygments_style = "sphinx" # use default white or "sphinx" style for code-blocks
+
+# autoapi
+autoapi_dirs = ["../../eelib"]
+autoapi_template_dir = "../_autoapi_templates"
+autoapi_options = [
+    "members",
+    "undoc-members",
+    "private-members",
+    "show-module-summary",
+    "special-members",
+    "show-inheritance",
+]
 
 # allow duplicate section titles without warning
 suppress_warnings = ["autosectionlabel.*"]
@@ -50,26 +62,6 @@ modindex_common_prefix = ["eelib."]
 
 # shorten objects names e.g. "eelib.core.control.EMS.EMS_model.HEMS" to "HEMS". This enhances readability of the index
 add_module_names = False
-
-# autodoc config
-autoclass_content = "both"  # display "init" or "class" docstring or "both"
-
-autodoc_class_signature = (  # wether the signature of classes shall be displayed "mixed" with the class or "separated" into a method
-    "mixed"
-)
-
-autodoc_member_order = (  # wether the members (e.g. methods of a class) shall be ordered "alphabetical" or "bysource" as in the python file
-    "bysource"
-)
-
-autodoc_default_options = {
-    "members": True,
-    "undoc-members": True,  # members missing docstrings
-    "private-members": True,  # members like _get_component
-    "special-members": False,  # members like __init__
-    "inherited-members": False,  # members that are already documented in the base class
-    "show-inheritance": True,  # show base classes from which the viewed class inherits
-}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
