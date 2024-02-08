@@ -10,7 +10,7 @@ build:
   tools:
     python: "3.10"
   jobs:
-    pre_create_environment:
+    pre_build
       - ./docs/make.bat clean
     # You can also specify other tool versions:
     # nodejs: "20"
