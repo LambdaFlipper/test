@@ -80,5 +80,3 @@ html_theme_options = {
     "includehidden": True,
     "titles_only": False,
 }
-html_logo = "_static/eelib_logo.png"
-html_favicon = "_static/eelib_favicon.png"
