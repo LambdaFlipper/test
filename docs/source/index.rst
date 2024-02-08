@@ -32,7 +32,7 @@ other things, the …
    :maxdepth: 1
    :caption: Contents
 
-   autoapi/index
+   changed_link
 
 Indices and tables
 ==================
