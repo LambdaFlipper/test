@@ -33,10 +33,7 @@ other things, the …
    :caption: Contents
    :hidden:
 
-   about_eelib
-   wiki/index
    autoapi/index
-   disclaimer_authors
 
 Indices and tables
 ==================
